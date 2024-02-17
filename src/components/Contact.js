@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin,faShareNodes } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
   return (
