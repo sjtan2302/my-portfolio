@@ -23,15 +23,16 @@ const Home = () => {
                 roundedCircle 
                 fluid 
                 className="mb-5 profile-image img-fluid" // Use img-fluid for responsiveness
-                style={{ width: '300px', height: '300px', border: '5px solid #DA4800' }}
+                style={{ width: '300px', height: '300px' }}
                 alt="Profile"
               />
             </div>
 
                 
             <h1 className='header'>Samuel James Tan</h1>
-            <h4 className='mb-3'>Information Systems Undergraduate at Singapore Management University</h4>
-            <a href="#about" className="btn btn-primary btn-lg">Learn More</a>
+            <h4 className='desc mb-3'>Information Systems Undergraduate @<br /> Singapore Management University</h4>
+            
+            <a href="#about" className="btn btn-primary btn-lg mt-3">Learn More</a>
             
 
           </Col>

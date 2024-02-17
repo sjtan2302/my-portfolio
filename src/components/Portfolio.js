@@ -1,40 +1,55 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+
 const Portfolio = () => {
-  // Example project data, replace with your own
+  // Example project data, updated with technologies and GitHub URL
   const projects = [
     {
       title: "Project One",
       description: "Description of the first project.",
-      imageUrl: "path-to-your-project-image.jpg",
+      imageUrl: "https://picsum.photos/500/300",
+      technologies: ["React", "Node.js", "MongoDB"],
+      githubUrl: "https://github.com/your-username/project-one",
     },
     {
       title: "Project Two",
       description: "Description of the second project.",
-      imageUrl: "path-to-your-project-image.jpg",
+      imageUrl: "https://picsum.photos/500/300",
+      technologies: ["Angular", "Express", "MySQL"],
+      githubUrl: "https://github.com/your-username/project-two",
     },
     {
       title: "Project Three",
       description: "Description of the third project.",
-      imageUrl: "path-to-your-project-image.jpg",
+      imageUrl: "https://picsum.photos/500/300",
+      technologies: ["Vue", "Firebase"],
+      githubUrl: "https://github.com/your-username/project-three",
     },
     // More projects...
   ];
 
   return (
     <section id="portfolio">
-    <Container>
-      <h2 className='header'>Portfolio</h2>
-      <div className="project-list">
-        {projects.map((project, index) => (
-          <div key={index} className="project">
-            <img src={project.imageUrl} alt={project.title} />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-          </div>
-        ))}
-      </div>
-    </Container>
+      <Container>
+        <h2 className='header mb-3'>Portfolio</h2>
+        <Row xs={1} md={2} lg={3} className="g-4">
+          {projects.map((project, index) => (
+            <Col key={index}>
+              <Card className="project-card bg-dark text-white">
+                <Card.Img variant="top" src={project.imageUrl} alt={project.title} />
+                <Card.Body>
+                  <Card.Title>{project.title}</Card.Title>
+                  <Card.Text>{project.description}</Card.Text>
+                  <Card.Text>
+                    <strong>Technologies:</strong> {project.technologies.join(', ')}
+                  </Card.Text>
+                  <Button variant="primary" href={project.githubUrl} target="_blank">View on GitHub</Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </section>
   );
 };

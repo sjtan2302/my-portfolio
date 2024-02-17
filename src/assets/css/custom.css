@@ -1,16 +1,15 @@
 /* custom.css */
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Share+Tech+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Protest+Revolution&family=Share+Tech+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Spice&family=Protest+Revolution&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Spice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
-    --primary-color: #012E40;
-    --accent-color1: #024959;
-    --accent-color2: #026773;
-    --accent-color3: #3CA6A6;
-    --accent-color4:  #DA4800;
-    --background-color: #F2E3D5;
+    --primary-color: #010A26;
+    --accent-color1: #03258C;
+    --accent-color2: #1243A6;
+    --accent-color3: #0F468C;
+    --accent-color4:  #66CDD9;
     --font-color: white;
+  }
+  .profile-image {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.3);
   }
   
   i {
@@ -19,21 +18,36 @@
   }
   
   .header {
-    font-family: "Bungee Spice", sans-serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
     font-size: 48px;
     
   }
-  .skillDesc {
-    font-size: 18px;
+  .desc {
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  .skill-list div {
+    display: flex;
+    align-items: center; /* Vertically center the icon and text */
+    gap: 10px; /* Add some space between the icon and the text */
+    margin-bottom: 20px; /* Add some space between each item */
   }
   
-   .skill {
+  .skill-list i {
+    min-width: 24px; /* Ensure icons have a consistent width */
+  }
+  
+  .icon {
+    margin-left: 5px;
+  }
+   /* .skill {
     font-family: "Bungee Inline", sans-serif;
     font-weight: 400;
     font-style: normal;
-   }
+   } */
   /* Navbar Styles */
   .navbar-custom {
     background-color: var(--primary-color);
@@ -62,8 +76,8 @@
   }
   
   .btn-primary:hover {
-    background-color: var(--accent-color3);
-    border-color: var(--accent-color3);
+    background-color: var(--accent-color4);
+    border-color: var(--accent-color4);
   }
   
   .btn-secondary {
@@ -78,7 +92,7 @@
   
   /* Typography */
   h1, h2, h3, h4, h5, h6 {
-    color: var(--background-color);
+    color: var(--font-color);
   }
   
   a, a:hover {
@@ -102,21 +116,30 @@
   }
 
   #app {
-    background-color: #012E40;
-    font-family: "Share Tech Mono", monospace;
+    background-color: var(--primary-color);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-
   }
+
+
 
   /* Target the icons within the skill sections */
-  i:hover {
+  /* i:hover {
     text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffea00, 0 0 35px #ffea00;
+  } */
+  
+
+  
+  .project-card {
+    transition: transform 0.2s; /* Animation */
+    box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.6); /* White glow effect */
   }
   
-  .skill-header {
-  min-height: 60px; /* Adjust based on your content and design needs */
-}
+  .project-card:hover {
+    transform: scale(1.05); /* Slightly scale up cards on hover */
+  }
   
   
   /* Adjustments for small screens */
@@ -126,7 +149,7 @@
     }
   
     .navbar-custom .navbar-toggler {
-      background-color: var(--background-color);
+      background-color: var(--primary-color);
     }
   
     .navbar-custom .navbar-toggler-icon {
@@ -140,7 +163,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      
     }
+
   }
 
+  .icon-link {
+    color: #333; /* Or any color you prefer */
+    margin-right: 10px; /* Adjust spacing to the right */
+    /* Add hover effect if desired */
+    transition: color 0.2s;
+  }
+  
+  .icon-link:hover {
+    color: var(--accent-color4); /* Or any hover color you prefer */
+  }
   
