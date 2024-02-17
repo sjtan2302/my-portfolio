@@ -1,0 +1,146 @@
+/* custom.css */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Protest+Revolution&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Spice&family=Protest+Revolution&family=Share+Tech+Mono&display=swap');
+:root {
+    --primary-color: #012E40;
+    --accent-color1: #024959;
+    --accent-color2: #026773;
+    --accent-color3: #3CA6A6;
+    --accent-color4:  #DA4800;
+    --background-color: #F2E3D5;
+    --font-color: white;
+  }
+  
+  i {
+    font-size: 24px; /* Adjust the size */
+    margin-right: 10px; /* Add some spacing between the icon and the text */
+  }
+  
+  .header {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    
+  }
+  .skillDesc {
+    font-size: 18px;
+  }
+  
+   .skill {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   }
+  /* Navbar Styles */
+  .navbar-custom {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-custom .navbar-brand {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+  .navbar-custom .nav-link {
+    color: var(--font-color);
+  }
+  
+  .navbar-custom .navbar-brand:hover,
+  .navbar-custom .nav-link:hover {
+    color: var(--accent-color4);
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background-color: var(--accent-color2);
+    border-color: var(--accent-color2);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--accent-color3);
+    border-color: var(--accent-color3);
+  }
+  
+  .btn-secondary {
+    background-color: var(--accent-color1);
+    border-color: var(--accent-color1);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--accent-color2);
+    border-color: var(--accent-color2);
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--background-color);
+  }
+  
+  a, a:hover {
+    color: var(--accent-color4);
+    text-decoration: none;
+  }
+  
+  /* Utility Classes */
+  .text-primary {
+    color: var(--primary-color) !important;
+  }
+  
+  .bg-primary {
+    background-color: var(--primary-color) !important;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 60px 0;
+    color: var(--font-color);
+  }
+
+  #app {
+    background-color: #012E40;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+
+  /* Target the icons within the skill sections */
+  i:hover {
+    text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffea00, 0 0 35px #ffea00;
+  }
+  
+  .skill-header {
+  min-height: 60px; /* Adjust based on your content and design needs */
+}
+  
+  
+  /* Adjustments for small screens */
+  @media (max-width: 768px) {
+    .navbar-custom {
+      background-color: var(--primary-color);
+    }
+  
+    .navbar-custom .navbar-toggler {
+      background-color: var(--background-color);
+    }
+  
+    .navbar-custom .navbar-toggler-icon {
+      filter: invert(1);
+    }
+    .header {
+      font-size: 32px; /* Default font size */
+      white-space: nowrap; /* Prevent wrapping */
+    }
+    .profile-image-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  
