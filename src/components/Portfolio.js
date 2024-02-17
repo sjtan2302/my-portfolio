@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 const Portfolio = () => {
   // Example project data, replace with your own
   const projects = [
