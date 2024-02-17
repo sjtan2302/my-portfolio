@@ -1,14 +1,17 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import portfolioImage from '../assets/images/portfoliowebsite.jpg'; // Adjust the path as necessary
 
 const Portfolio = () => {
   // Example project data, updated with technologies and GitHub URL
   const projects = [
     {
-      title: "Project One",
-      description: "Description of the first project.",
-      imageUrl: "https://picsum.photos/500/300",
-      technologies: ["React", "Node.js", "MongoDB"],
+      title: "Portfolio Website",
+      description: "My very first personal project! A portfolio website built with React and Bootstrap.",
+      imageUrl: portfolioImage,
+      technologies: ["React", "Bootstrap"],
       githubUrl: "https://github.com/your-username/project-one",
     },
     {
@@ -43,7 +46,7 @@ const Portfolio = () => {
                   <Card.Text>
                     <strong>Technologies:</strong> {project.technologies.join(', ')}
                   </Card.Text>
-                  <Button variant="primary" href={project.githubUrl} target="_blank">View on GitHub</Button>
+                  <Button variant="secondary" href={project.githubUrl} target="_blank"> View on GitHub <FontAwesomeIcon icon={faGithub} className='icon' /></Button>
                 </Card.Body>
               </Card>
             </Col>
