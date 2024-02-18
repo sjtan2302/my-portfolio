@@ -141,10 +141,10 @@
     transform: scale(1.05); /* Slightly scale up cards on hover */
   }
   
-  
+
   /* Adjustments for small screens */
   @media (max-width: 768px) {
-    .navbar-custom {
+    /* .navbar-custom {
       background-color: var(--primary-color);
     }
   
@@ -154,7 +154,7 @@
   
     .navbar-custom .navbar-toggler-icon {
       filter: invert(1);
-    }
+    } */
     .header {
       font-size: 32px; /* Default font size */
       white-space: nowrap; /* Prevent wrapping */

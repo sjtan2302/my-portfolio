@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import animationData from '../lotties/computer';
+import animationData from '../lotties/network';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import profileImage from '../assets/images/profile.jpg'; // Import the image here
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice"
-    }
+    },
   };
   return (
     <section id="home">
@@ -36,7 +36,7 @@ const Home = () => {
             
 
           </Col>
-          <Col md={6}> {/* This column is for the Lottie animation */}
+          <Col md={6} className="d-none d-md-block"> {/* This column is for the Lottie animation */}
             <Lottie 
               options={defaultOptions}
               height="100%" width="100%"

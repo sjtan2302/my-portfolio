@@ -6,7 +6,7 @@ const Navigation = () => {
     <Navbar variant="dark" expand="lg" className="navbar-custom">
       <Container>
         <Navbar.Brand href="#home" className="ms-3">Samuel James Tan</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link href="#home">Home</Nav.Link>
@@ -16,7 +16,6 @@ const Navigation = () => {
           </Nav>
         </Navbar.Collapse>
       </Container>
-
     </Navbar>
   );
 };
