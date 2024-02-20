@@ -34,22 +34,25 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <Container>
-        <h2 className='header mb-3'>Portfolio</h2>
+        <h2 className='header mb-5'>Portfolio</h2>
         <Row xs={1} md={2} lg={3} className="g-4">
           {projects.map((project, index) => (
             <Col key={index}>
-              <Card className="project-card bg-dark text-white">
-                <Card.Img variant="top" src={project.imageUrl} alt={project.title} />
-                <Card.Body>
-                  <Card.Title>{project.title}</Card.Title>
-                  <Card.Text>{project.description}</Card.Text>
-                  <Card.Text>
+              <Card className="project-card bg-dark text-white mx-3">
+                <Card.Img variant="top" src={project.imageUrl} alt={project.title} className="custom-card-img" />
+                <Card.Body className="card-body">
+                  <Card.Title className="card-title">{project.title}</Card.Title>
+                  <Card.Text className="card-text">{project.description}</Card.Text>
+                  <Card.Text className="card-text">
                     <strong>Technologies:</strong> {project.technologies.join(', ')}
                   </Card.Text>
-                  <Button variant="secondary" href={project.githubUrl} target="_blank"> View on GitHub <FontAwesomeIcon icon={faGithub} className='icon' /></Button>
+                  <div className="button-container">
+                    <Button variant="secondary" href={project.githubUrl} target="_blank">View on GitHub <FontAwesomeIcon icon={faGithub} className='icon' /></Button>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>
+
           ))}
         </Row>
       </Container>

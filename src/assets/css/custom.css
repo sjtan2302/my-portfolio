@@ -1,5 +1,5 @@
 /* custom.css */
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Spice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Bungee+Inline&family=Bungee+Spice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --primary-color: #010A26;
     --accent-color1: #03258C;
@@ -49,17 +49,26 @@
     font-style: normal;
    } */
   /* Navbar Styles */
+
+  .name{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+  }
   .navbar-custom {
     background-color: var(--primary-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .navbar-custom .navbar-brand {
-    font-family: "Bungee Inline", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 28px;
     
   }
+
   .navbar-custom .nav-link {
     color: var(--font-color);
   }
@@ -135,12 +144,36 @@
   .project-card {
     transition: transform 0.2s; /* Animation */
     box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.6); /* White glow effect */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   
   .project-card:hover {
     transform: scale(1.05); /* Slightly scale up cards on hover */
   }
+  .custom-card-img {
+    height: 200px; /* Example fixed height, adjust as needed */
+    object-fit: cover; /* Crop to fit without stretching */
+    width: 100%; /* Ensure the image covers the full width of the card */
+  }
+  .card-body {
+    flex-grow: 1; /* Allows the card body to fill the available space */
+    display: flex;
+    flex-direction: column;
+  }
   
+  .card-title, .card-text {
+    overflow: hidden; /* Prevent text overflow */
+  }
+  
+  .card-text:last-child {
+    margin-top: auto; /* Pushes the last text element and button to the bottom */
+  }
+  
+  .button-container {
+    margin-top: auto; /* Ensure buttons are aligned at the bottom */
+  }
 
   /* Adjustments for small screens */
   @media (max-width: 768px) {
@@ -164,6 +197,9 @@
       align-items: center;
       justify-content: center;
       
+    }
+    .name{
+      font-size: 56px;
     }
 
   }

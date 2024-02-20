@@ -29,7 +29,7 @@ const Home = () => {
             </div>
 
                 
-            <h1 className='header'>Samuel James Tan</h1>
+            <h1 className='name'>Samuel James Tan</h1>
             <h4 className='desc mb-3'>Information Systems Undergraduate @<br /> Singapore Management University</h4>
             
             <a href="#about" className="btn btn-primary btn-lg mt-3">Learn More</a>
