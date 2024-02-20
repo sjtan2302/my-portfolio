@@ -10,7 +10,7 @@ const About = () => {
         <h2 className='header mb-3'>Skills</h2>
         <h4 className='desc mb-5'>Through my internships and academic pursuits, I've honed a broad range of software engineering and web development skills, complemented by a deep understanding of AI and data analytics principles.</h4>
         <Row>
-          <Col md={4}>
+          <Col md={4} className="mb-3">
             <h4 className='mb-3 skill skill-header'>
               Languages <FontAwesomeIcon icon={faCode} className='icon' />
             </h4>
@@ -23,7 +23,7 @@ const About = () => {
               <div><i className="devicon-java-plain colored"></i> Java</div>
             </div>
           </Col>
-          <Col md={4}>
+          <Col md={4} className="mb-3">
             <h4 className='mb-3 skill skill-header'>
               Frameworks & Libraries <FontAwesomeIcon icon={faTools} className='icon' />
             </h4>
@@ -38,7 +38,7 @@ const About = () => {
               
             </div>
           </Col>
-          <Col md={4}>
+          <Col md={4} className="mb-3">
             <h4 className='mb-3 skill skill-header'>
               Databases <FontAwesomeIcon icon={faDatabase} className='icon' />
             </h4>
