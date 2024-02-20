@@ -12,7 +12,7 @@ const Portfolio = () => {
       description: "My very first personal project! A portfolio website built with React and Bootstrap.",
       imageUrl: portfolioImage,
       technologies: ["React", "Bootstrap"],
-      githubUrl: "https://github.com/your-username/project-one",
+      githubUrl: "https://github.com/sjtan2302/my-portfolio",
     },
     // {
     //   title: "Project Two",
