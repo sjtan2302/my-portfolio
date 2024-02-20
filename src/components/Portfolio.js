@@ -14,20 +14,20 @@ const Portfolio = () => {
       technologies: ["React", "Bootstrap"],
       githubUrl: "https://github.com/your-username/project-one",
     },
-    {
-      title: "Project Two",
-      description: "Description of the second project.",
-      imageUrl: "https://picsum.photos/500/300",
-      technologies: ["Angular", "Express", "MySQL"],
-      githubUrl: "https://github.com/your-username/project-two",
-    },
-    {
-      title: "Project Three",
-      description: "Description of the third project.",
-      imageUrl: "https://picsum.photos/500/300",
-      technologies: ["Vue", "Firebase"],
-      githubUrl: "https://github.com/your-username/project-three",
-    },
+    // {
+    //   title: "Project Two",
+    //   description: "Description of the second project.",
+    //   imageUrl: "https://picsum.photos/500/300",
+    //   technologies: ["Angular", "Express", "MySQL"],
+    //   githubUrl: "https://github.com/your-username/project-two",
+    // },
+    // {
+    //   title: "Project Three",
+    //   description: "Description of the third project.",
+    //   imageUrl: "https://picsum.photos/500/300",
+    //   technologies: ["Vue", "Firebase"],
+    //   githubUrl: "https://github.com/your-username/project-three",
+    // },
     // More projects...
   ];
 
